@@ -2,7 +2,7 @@
 
 A polished desktop drawing board built with Python and Tkinter. Create quick sketches, annotate ideas, add shapes and text, then export the canvas as a PNG.
 
-Made by **669px**.
+Made by **byte4day**.
 
 ## Features
 

@@ -33,7 +33,7 @@ class HistoryCommand:
 class WhiteboardApp:
     def __init__(self) -> None:
         self.root = tk.Tk()
-        self.root.title("Whiteboard — Made by 669px")
+        self.root.title("Whiteboard — Made by byte4day")
         self.root.minsize(900, 600)
         self.root.protocol("WM_DELETE_WINDOW", self.on_exit)
 
@@ -140,7 +140,7 @@ class WhiteboardApp:
 
         header_actions = ttk.Frame(header, style="Header.TFrame")
         header_actions.pack(side=tk.RIGHT)
-        ttk.Label(header_actions, text="Made by 669px", style="Credit.TLabel").pack(side=tk.LEFT, padx=(0, 16))
+        ttk.Label(header_actions, text="Made by byte4day", style="Credit.TLabel").pack(side=tk.LEFT, padx=(0, 16))
         ttk.Button(header_actions, text="↶  Undo", style="Action.TButton", command=self.undo).pack(side=tk.LEFT, padx=3)
         ttk.Button(header_actions, text="↷  Redo", style="Action.TButton", command=self.redo).pack(side=tk.LEFT, padx=3)
         ttk.Button(header_actions, text="Save PNG", style="Primary.TButton", command=self.save_png).pack(side=tk.LEFT, padx=(8, 0))
@@ -865,7 +865,7 @@ class WhiteboardApp:
 
     def update_title(self) -> None:
         prefix = "• " if self.is_modified() else ""
-        self.root.title(f"{prefix}Whiteboard — Made by 669px")
+        self.root.title(f"{prefix}Whiteboard — Made by byte4day")
 
     def on_exit(self) -> None:
         if self.is_modified():
@@ -882,7 +882,7 @@ class WhiteboardApp:
     def show_about(self) -> None:
         messagebox.showinfo(
             "About Whiteboard",
-            "Whiteboard\nMade by 669px\n\nA modern Tkinter drawing application.\n\n"
+            "Whiteboard\nMade by byte4day\n\nA modern Tkinter drawing application.\n\n"
             "Keyboard shortcuts:\nCtrl+N New   Ctrl+O Open   Ctrl+S Save\n"
             "Ctrl+Z Undo   Ctrl+Y Redo\nP Pen   E Eraser   R Rectangle   C Circle\n"
             "L Line   A Arrow   T Text   V Select\nG Grid   + / - Zoom",
