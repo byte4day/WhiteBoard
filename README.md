@@ -2,7 +2,7 @@
 
 A polished desktop drawing board built with Python and Tkinter. Create quick sketches, annotate ideas, add shapes and text, then export the canvas as a PNG.
 
-Made by **byte4day**.
+Made by **[byte4day](https://github.com/byte4day)**.
 
 ## Features
 
@@ -15,12 +15,17 @@ Made by **byte4day**.
 - Zoom, pan, optional grid, and keyboard shortcuts
 - Open an image onto the canvas and export drawings to PNG
 
+## Requirements
+
+- Python 3.10+
+- [Pillow](https://pypi.org/project/Pillow/) 12.x
+
 ## Run locally
 
-Requires Python 3.10+ and Pillow.
-
 ```bash
-python -m pip install Pillow
+git clone https://github.com/byte4day/WhiteBoard.git
+cd WhiteBoard
+python -m pip install -r requirements.txt
 python app.py
 ```
 
@@ -40,4 +45,4 @@ Use the middle mouse button (or right mouse button) to pan the canvas.
 
 ## License
 
-This project is available for personal and educational use.
+[MIT](LICENSE)
